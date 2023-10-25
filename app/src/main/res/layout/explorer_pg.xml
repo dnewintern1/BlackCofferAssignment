@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/explorer_toolbar"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            android:text="@string/tab1"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/tab2"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/tab3"/>
+    </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:id="@+id/view_Pager2"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_Navigation_View"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottomnavigation" />
+
+
+
+
+
+
+</LinearLayout>

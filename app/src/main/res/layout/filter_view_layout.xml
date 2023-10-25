@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_filters"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="40dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Profession|University|Company"
+                            android:paddingBottom="25dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/blue"
+                            android:text="Profession"
+                            android:textStyle="normal"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/blue"
+                            app:hintEnabled="false"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:boxStrokeColor="@color/blue"
+                            app:boxStrokeWidth="0.5px">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                                android:id="@+id/id_profession_editxt"
+                            android:selectAllOnFocus="false"
+                                android:hint="Enter profession to filter"
+                            android:textColor="@color/blue"
+                            android:textColorHint="@color/blue"
+                            android:textSize="14sp"
+                            tools:visibility="visible"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/blue"
+                            android:text="University Name" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/blue"
+                            app:hintEnabled="false"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:boxStrokeColor="@color/blue"
+                            app:boxStrokeWidth="0.5px">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/id_Universityname_editxt"
+                                android:selectAllOnFocus="false"
+                                android:hint="Enter University name to filter"
+                                android:textColor="@color/blue"
+                                android:textColorHint="@color/blue"
+                                android:textSize="14sp"
+                                tools:visibility="visible"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/blue"
+                            android:text="Company Name" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/blue"
+                            app:hintEnabled="false"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:boxStrokeColor="@color/blue"
+                            app:boxStrokeWidth="0.5px">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:selectAllOnFocus="false"
+                                android:id="@+id/id_CompanyName_editxt"
+
+                                android:hint="Enter company name to filter"
+                                android:textColor="@color/blue"
+                                android:textColorHint="@color/blue"
+                                android:textSize="14sp"
+                                tools:visibility="visible"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <View style="@style/divider_lines" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Location"
+                            android:paddingBottom="25dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/blue"
+                            android:text="Hometown"
+                            android:textStyle="normal"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/blue"
+                            app:hintEnabled="false"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:boxStrokeColor="@color/blue"
+                            app:boxStrokeWidth="0.5px">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:selectAllOnFocus="false"
+                                android:id="@+id/id_city_editxt"
+                                android:hint="Enter city to filter"
+                                android:textColor="@color/blue"
+                                android:textColorHint="@color/blue"
+                                android:textSize="14sp"
+                                tools:visibility="visible"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/blue"
+                            android:text="Lives in" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/blue"
+                            app:hintEnabled="false"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:boxStrokeColor="@color/blue"
+                            app:boxStrokeWidth="0.5px">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/id_Lives_in_editxt"
+                                android:selectAllOnFocus="false"
+                                android:hint="Enter city name to filter"
+                                android:textColor="@color/blue"
+                                android:textColorHint="@color/blue"
+                                android:textSize="14sp"
+                                tools:visibility="visible"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <View style="@style/divider_lines" />
+
+
+                     <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Preference"
+                        android:paddingBottom="25dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/blue"
+                        android:text="Hobbies"
+                        android:textStyle="normal"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/blue"
+                        app:hintEnabled="false"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:boxStrokeColor="@color/blue"
+                        app:boxStrokeWidth="0.5px">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/id_HObbies_editxt"
+                            android:selectAllOnFocus="false"
+                            android:hint="Enter Hobbies to filter"
+                            android:textColor="@color/blue"
+                            android:textColorHint="@color/blue"
+                            android:textSize="14sp"
+                            tools:visibility="visible"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/blue"
+                        android:text="Movies" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/blue"
+                        app:hintEnabled="false"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:boxStrokeColor="@color/blue"
+                        app:boxStrokeWidth="0.5px">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/id_Movies_editxt"
+                            android:selectAllOnFocus="false"
+                            android:hint="Enter Movies name to filter"
+                            android:textColor="@color/blue"
+                            android:textColorHint="@color/blue"
+                            android:textSize="14sp"
+                            tools:visibility="visible"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/blue"
+                        android:text="Food" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/blue"
+                        app:hintEnabled="false"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:boxStrokeColor="@color/blue"
+                        app:boxStrokeWidth="0.5px">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:selectAllOnFocus="false"
+                            android:id="@+id/id_Food_editxt"
+                            android:hint="Enter food name to filter"
+                            android:textColor="@color/blue"
+                            android:textColorHint="@color/blue"
+                            android:textSize="14sp"
+                            tools:visibility="visible"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/blue"
+                        android:text="Sports" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:textColorHint="@color/blue"
+                        app:hintEnabled="false"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:boxStrokeColor="@color/blue"
+                        app:boxStrokeWidth="0.5px">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:selectAllOnFocus="false"
+                            android:id="@+id/id_Sport_editxt"
+                            android:hint="Enter Sports name to filter"
+                            android:textColor="@color/blue"
+                            android:textColorHint="@color/blue"
+                            android:textSize="14sp"
+                            tools:visibility="visible"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/blue"
+                        android:text="Others" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="Smoker"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp"
+                            android:layout_weight="0.5" />
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:id="@+id/id_somker_switch"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="Drinks"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp"
+                            android:layout_weight="0.5" />
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:id="@+id/id_drink_switch"
+                            android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/divider_lines"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="40dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:text="Profile Completion Score"
+                                android:textStyle="bold"
+                                android:textColor="@color/blue"
+                                android:layout_weight="80"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/id_slider_values"
+                                android:paddingTop="10dp"
+                                android:visibility="visible"
+                                android:text="0-100"
+                                android:layout_weight="20"
+                                android:textStyle="bold"
+                                android:textColor="@color/blue"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.slider.RangeSlider
+
+                            android:id="@+id/slider_multiple_thumbs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stepSize="1"
+                            android:valueFrom="0"
+                            android:valueTo="100"
+                            app:haloColor="@color/white"
+                            app:labelBehavior="gone"
+                            app:thumbRadius="2.5mm"
+                            app:tickColorActive="@color/blue"
+                            app:tickColorInactive="@color/white"
+                            app:trackHeight="2dp"
+                            app:values="@array/initial_slider_values" />
+                    </LinearLayout>
+
+                <View style="@style/divider_lines"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="30dp"
+                        android:layout_margin="40dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="Purpose"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp"
+                            android:layout_weight="0.5" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_Coffee_ftlr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="coffee"
+                            style="@style/ChipCustomStyle"
+                            android:layout_marginEnd="8dp"
+                            app:chipStrokeWidth="1dp" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_Business_ftlr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bussiness"
+                            style="@style/ChipCustomStyle"
+                            android:layout_marginEnd="8dp"
+                            app:chipStrokeColor="@color/blue"
+                            app:chipStrokeWidth="1dp" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_Hobbies_ftlr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hobbies"
+                            style="@style/ChipCustomStyle"
+                            app:chipStrokeColor="@color/blue"
+                            app:chipStrokeWidth="1dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chip_Friendship_ftlr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Friendship"
+                                android:layout_marginEnd="8dp"
+                                style="@style/ChipCustomStyle"
+                                app:chipStrokeColor="@color/blue"
+                                app:chipStrokeWidth="1dp" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chip_Movies_ftlr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Movies"
+                                style="@style/ChipCustomStyle"
+                                app:chipStrokeColor="@color/blue"
+                                android:layout_marginEnd="8dp"
+                                app:chipStrokeWidth="1dp" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chip_Dinning_ftlr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dinning"
+                                android:textColor="@color/blue"
+                                app:chipStrokeColor="@color/blue"
+                                style="@style/ChipCustomStyle"
+                                app:chipStrokeWidth="1dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id_btn_saved_filters"
+                    android:background="@drawable/roundedbutton"
+                    android:textColor="@color/white"
+                    android:text="APPLY"/>
+            </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Personal_Tab">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="18dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView_Personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconifiedByDefault="false"
+            android:layout_weight="0.8"
+            android:layout_marginRight="24dp"
+            app:queryHint="Search"
+            android:background="@drawable/search_view_outline"
+            app:searchIcon="@drawable/id_search" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="35dp"
+            android:layout_weight="0.2"
+            android:id="@+id/Filter_P_image"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:src="@drawable/filter"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_Personal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content">
+        <include layout="@layout/recycler_view_row"/>
+    </LinearLayout>
+
+
+</FrameLayout>
+
+

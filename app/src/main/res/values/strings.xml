@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BlackCofferAssignment</string>
+    <string name="promo">SOS|Emergency Need Assistance! HELP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab1">Personal</string>
+    <string name="tab2">Business</string>
+    <string name="tab3">Merchant</string>
+    <string name="featured_selected">coffee | bussiness | frienship</string>
+    <string name="Greeting">Howdy</string>
+    <string name="biodata">Hi Community!! i am open to new connections</string>
+    <string name="user_name">Dummy Name</string>
+
+</resources>

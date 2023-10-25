@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Your Availability"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_view1"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:boxStrokeWidth="0.5px"
+            app:hintEnabled="false">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start"
+                android:hint="@string/promo"
+                android:inputType="none"
+                android:lines="1"
+                android:paddingStart="10dp"
+                android:popupTheme="@style/Theme.Material3.DynamicColors.DayNight"
+                android:textColor="@color/BLUE"
+                android:textColorHint="@color/blue"
+                android:textSize="14dp"
+                android:visibility="visible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Add Your Status"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/blue"
+            app:boxStrokeWidth="0.5px"
+            tools:ignore="ExtraText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edi_text"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:editable="true"
+                android:inputType="textMultiLine"
+                android:selectAllOnFocus="false"
+                android:text="Hi community! I am open to new connections '😊' "
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:textSize="14sp"
+                app:labelBehavior="visible"
+                tools:visibility="visible" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/characterLimitLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:text="0/250"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Select Hyper Local Distance"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:value="10"
+            android:valueFrom="1"
+            android:valueTo="100"
+            app:haloColor="@color/white"
+            app:labelBehavior="visible"
+            style="@style/Myslider"
+            app:thumbColor="@color/blue"
+            app:thumbRadius="1.3mm"
+            app:tickColorActive="@color/blue"
+            app:tickColorInactive="@color/white"
+
+            app:trackHeight="2dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingTop="10dp"
+
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="0.5"
+                android:text="1 Km"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="100 Km"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Select Purpose"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+
+            android:textStyle="bold|normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_Coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="coffee"
+                style="@style/ChipCustomStyle"
+                android:layout_marginEnd="8dp"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_Business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bussiness"
+                style="@style/ChipCustomStyle"
+                android:layout_marginEnd="8dp"
+                app:chipStrokeColor="@color/blue"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_Hobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobbies"
+                style="@style/ChipCustomStyle"
+                app:chipStrokeColor="@color/blue"
+                app:chipStrokeWidth="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_Friendship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friendship"
+                android:layout_marginEnd="8dp"
+                style="@style/ChipCustomStyle"
+                app:chipStrokeColor="@color/blue"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_Movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movies"
+                style="@style/ChipCustomStyle"
+                app:chipStrokeColor="@color/blue"
+                android:layout_marginEnd="8dp"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_Dinning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinning"
+                android:textColor="@color/blue"
+                app:chipStrokeColor="@color/blue"
+                style="@style/ChipCustomStyle"
+                app:chipStrokeWidth="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="25dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_Dating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Dating"
+                style="@style/ChipCustomStyle"
+                app:chipStrokeColor="@color/blue"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_Matrimony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mantrimony"
+                style="@style/ChipCustomStyle"
+                app:chipStrokeColor="@color/blue"
+                app:chipStrokeWidth="1dp" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_SaveNdExplore"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="@color/BLUE"
+            android:lines="1"
+            android:text="Save &amp; Explore"
+            android:textColor="@color/white"
+            android:textColorHint="@color/BLUE"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

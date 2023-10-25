@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/bottom_Explore"
+        android:title="Explore"
+        android:icon="@drawable/explore_unfill_to_fill"/>
+
+    <item android:id="@+id/bottom_Network"
+        android:title="Network"
+        android:icon="@drawable/network_unfill_to_fill"/>
+
+    <item android:id="@+id/bottom_Chat"
+        android:title="Chat"
+        android:icon="@drawable/chat_unfill_to_fill"/>
+
+    <item android:id="@+id/bottom_Contacts"
+        android:title="Contacts"
+        android:icon="@drawable/chat_unfill_to_fill"/>
+
+
+    <item android:id="@+id/bottom_Groups"
+        android:title="Groups"
+        android:icon="@drawable/hashtaghdd"/>
+
+
+
+
+
+
+
+
+
+
+
+</menu>
